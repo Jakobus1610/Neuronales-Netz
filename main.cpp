@@ -40,9 +40,7 @@ struct Network
 
 const double EULER = 2.71828182845904523536;
 
-Network network;
-
-void initNetwork(Network network, int numLayers, int numRows[])
+void initNetwork(Network &network, int numLayers, int numRows[])
 {
     network.numNodeLayers = numLayers;
     network.nodeLayers = new NodeLayer[numLayers];
